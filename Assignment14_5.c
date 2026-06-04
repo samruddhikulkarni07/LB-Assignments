@@ -42,7 +42,7 @@ int main()
 
     printf("Enter %d elements\n",iSize);
 
-    for(iCnt == 0; iCnt < iSize; iCnt++)
+    for(iCnt = 0; iCnt < iSize; iCnt++)
     {
         printf("Enter elements : %d\n",iCnt+1);
         scanf("%d",&p[iCnt]);
