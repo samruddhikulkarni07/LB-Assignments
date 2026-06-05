@@ -10,25 +10,19 @@ typedef int BOOL;
 BOOL Check(int Arr[], int iLength)
 {
     int iCnt = 0;
-    int iPresent = 0;
+    BOOL bFlag = FALSE;
 
     for(iCnt = 0; iCnt < iLength; iCnt++)
     {
         if(Arr[iCnt] == 11)
         {
-            iPresent = iPresent + 1;
+            bFlag = TRUE;
+            break;
         }
        
     }
 
-    if(iPresent >= 1)
-    {
-        return TRUE;
-    }
-    else
-    {
-        return FALSE;
-    }
+    return bFlag;
 }
 
 
